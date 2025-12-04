@@ -7,7 +7,7 @@
     /* --- MAIN COLORS --- */
     --dark-blue: #2b2e7e;
     --light-blue: #4f518a;
-    --beige: #fcf0fc;
+    --x-beige: #fcf0fc;
     --red: #e40512;
 
     
@@ -62,4 +62,39 @@
     --letter-space-5: -0.0096em;
     --letter-space-6: -0.0137em;
 
+}
+nav img {
+    background-color: var(--x-beige);
+    border-radius: 10px;
+    margin-left: var(--font-size-2);
+    aspect-ratio: 1/1;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding: 0.52rem;
+    font-family: 'Fredoka';
+    font-size: var(--font-size);
+    font-weight: 500;
+    letter-spacing: var(--letter-space-2b);
+    position: fixed;
+    width: 100vw;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+li {
+    list-style: none;
+}
+nav a {
+    color: var(--x-beige);
+    text-decoration: none;
+    padding-right: var(--font-size-2);
+    height: 100%;
 }
