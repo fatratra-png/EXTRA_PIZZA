@@ -88,13 +88,19 @@ ul {
     flex-direction: row;
     align-items: center;
     gap: 50px;
+    height: 100%;
 }
 li {
     list-style: none;
+    height: 100%;
+    text-align: center;
 }
 nav a {
     color: var(--x-beige);
     text-decoration: none;
     padding-right: var(--font-size-2);
     height: 100%;
+}
+.active {
+    color: var(--red);
 }
