@@ -7,7 +7,7 @@
   /* --- MAIN COLORS --- */
   --dark-blue: #2b2e7e;
   --light-blue: #4f518a;
-  --x-beige: #fcf0fc;
+  --x-beige: #fcf0ec;
   --red: #e40512;
 
   /* --- FONT SIZES --- */
@@ -74,7 +74,7 @@ header {
   align-items: center;
   background-color: var(--dark-blue);
   padding: 0.52rem;
-  font-family: "Fredoka";
+  font-family: "Montserrat";
   font-size: var(--font-size);
   font-weight: 500;
   letter-spacing: var(--letter-space-2b);
@@ -94,7 +94,7 @@ li {
   text-align: center;
 }
 header a {
-  color: var(--x-beige);
+  color: #fff;
   text-decoration: none;
   padding-right: var(--font-size-2);
   height: 100%;
@@ -127,4 +127,34 @@ header a {
   font-size: 8px;
   position: relative;
   left: -22px;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  position: relative;
+  top: 240px;
+  left: -410px;
+  text-align: justify;
+  background-color: var(--x-beige);
+}
+.hero h1 {
+  font-size: 80px;
+  margin-bottom: 2px;
+}
+.hero-p {
+  margin-bottom: 15px;
+}
+.subtitle {
+  font-family: "Montserrat";
+}
+.hero h1 span {
+  font-family: "Black Han Sans";
+}
+.span_blue {
+  color: var(--dark-blue);
+}
+.span_red {
+  color: var(--red);
 }
