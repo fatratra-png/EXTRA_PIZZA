@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* --- MAIN COLORS --- */
+    --dark-blue: #2b2e7e;
+    --light-blue: #4f518a;
+    --beige: #fcf0fc;
+    --red: #e40512;
+
+    
+    /* --- FONT SIZES --- */
+
+    /* below the base */
+    --font-size-2b: 0.625rem;
+    --font-size-1b: 0.8125rem;
+
+    /* the base */
+    --font-size: 1rem;
+
+    /* above the base */
+    --font-size-1: 1.25rem;
+    --font-size-2: 1.5625rem;
+    --font-size-3: 2rem;
+    --font-size-4: 2.5rem;
+    --font-size-5: 3.1875rem;
+    --font-size-6: 4rem;
+
+    /* --- LINE HEIGHTS --- */
+
+    /* below the base */
+    --line-height-2b: 2;
+    --line-height-1b: 1.5385;
+
+    /* the base */
+    --line-height: 1.5;
+
+    /* above the base */
+    --line-height-1: 1.4;
+    --line-height-2: 1.28;
+    --line-height-3: 1.25;
+    --line-height-4: 1.2;
+    --line-height-5: 1.1765;
+    --line-height-6: 1.125;
+
+    /* --- LETTER SPACING --- */
+
+    /* below the base */
+    --letter-space-2b: 0.074em;
+    --letter-space-1b: 0.05em;
+
+    /* the base */
+    --letter-space: 0.035em;
+
+    /* above the base */
+    --letter-space-1: 0.022em;
+    --letter-space-2: 0.0116em;
+    --letter-space-3: 0.0025em;
+    --letter-space-4: -0.004em;
+    --letter-space-5: -0.0096em;
+    --letter-space-6: -0.0137em;
+
+}
