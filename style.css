@@ -1,106 +1,126 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :root {
-    /* --- MAIN COLORS --- */
-    --dark-blue: #2b2e7e;
-    --light-blue: #4f518a;
-    --x-beige: #fcf0fc;
-    --red: #e40512;
+  /* --- MAIN COLORS --- */
+  --dark-blue: #2b2e7e;
+  --light-blue: #4f518a;
+  --x-beige: #fcf0fc;
+  --red: #e40512;
 
-    
-    /* --- FONT SIZES --- */
+  /* --- FONT SIZES --- */
 
-    /* below the base */
-    --font-size-2b: 0.625rem;
-    --font-size-1b: 0.8125rem;
+  /* below the base */
+  --font-size-2b: 0.625rem;
+  --font-size-1b: 0.8125rem;
 
-    /* the base */
-    --font-size: 1rem;
+  /* the base */
+  --font-size: 1rem;
 
-    /* above the base */
-    --font-size-1: 1.25rem;
-    --font-size-2: 1.5625rem;
-    --font-size-3: 2rem;
-    --font-size-4: 2.5rem;
-    --font-size-5: 3.1875rem;
-    --font-size-6: 4rem;
+  /* above the base */
+  --font-size-1: 1.25rem;
+  --font-size-2: 1.5625rem;
+  --font-size-3: 2rem;
+  --font-size-4: 2.5rem;
+  --font-size-5: 3.1875rem;
+  --font-size-6: 4rem;
 
-    /* --- LINE HEIGHTS --- */
+  /* --- LINE HEIGHTS --- */
 
-    /* below the base */
-    --line-height-2b: 2;
-    --line-height-1b: 1.5385;
+  /* below the base */
+  --line-height-2b: 2;
+  --line-height-1b: 1.5385;
 
-    /* the base */
-    --line-height: 1.5;
+  /* the base */
+  --line-height: 1.5;
 
-    /* above the base */
-    --line-height-1: 1.4;
-    --line-height-2: 1.28;
-    --line-height-3: 1.25;
-    --line-height-4: 1.2;
-    --line-height-5: 1.1765;
-    --line-height-6: 1.125;
+  /* above the base */
+  --line-height-1: 1.4;
+  --line-height-2: 1.28;
+  --line-height-3: 1.25;
+  --line-height-4: 1.2;
+  --line-height-5: 1.1765;
+  --line-height-6: 1.125;
 
-    /* --- LETTER SPACING --- */
+  /* --- LETTER SPACING --- */
 
-    /* below the base */
-    --letter-space-2b: 0.074em;
-    --letter-space-1b: 0.05em;
+  /* below the base */
+  --letter-space-2b: 0.074em;
+  --letter-space-1b: 0.05em;
 
-    /* the base */
-    --letter-space: 0.035em;
+  /* the base */
+  --letter-space: 0.035em;
 
-    /* above the base */
-    --letter-space-1: 0.022em;
-    --letter-space-2: 0.0116em;
-    --letter-space-3: 0.0025em;
-    --letter-space-4: -0.004em;
-    --letter-space-5: -0.0096em;
-    --letter-space-6: -0.0137em;
-
+  /* above the base */
+  --letter-space-1: 0.022em;
+  --letter-space-2: 0.0116em;
+  --letter-space-3: 0.0025em;
+  --letter-space-4: -0.004em;
+  --letter-space-5: -0.0096em;
+  --letter-space-6: -0.0137em;
 }
 nav img {
-    background-color: var(--x-beige);
-    border-radius: 10px;
-    margin-left: var(--font-size-2);
-    aspect-ratio: 1/1;
+  background-color: var(--x-beige);
+  border-radius: 10px;
+  margin-left: var(--font-size-2);
+  aspect-ratio: 1/1;
 }
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--dark-blue);
-    padding: 0.52rem;
-    font-family: 'Fredoka';
-    font-size: var(--font-size);
-    font-weight: 500;
-    letter-spacing: var(--letter-space-2b);
-    position: fixed;
-    width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 0.52rem;
+  font-family: "Fredoka";
+  font-size: var(--font-size);
+  font-weight: 500;
+  letter-spacing: var(--letter-space-2b);
+  position: fixed;
+  width: 100vw;
 }
 ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
 }
 li {
-    list-style: none;
-    height: 100%;
-    text-align: center;
+  list-style: none;
+  height: 100%;
+  text-align: center;
 }
 nav a {
-    color: var(--x-beige);
-    text-decoration: none;
-    padding-right: var(--font-size-2);
-    height: 100%;
+  color: var(--x-beige);
+  text-decoration: none;
+  padding-right: var(--font-size-2);
+  height: 100%;
 }
 .active {
-    color: var(--red);
+  color: var(--red);
+}
+.cta_reservation {
+  position: relative;
+  background-color: var(--red);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.new_feat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.new {
+  background-color: green;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  position: relative;
+  left: -22px;
 }
