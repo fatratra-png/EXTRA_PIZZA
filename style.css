@@ -112,7 +112,7 @@ header a {
   transition: all ease 0.2s;
 }
 .cta_reservation:hover {
-  background-color: var(--red);
+  background-color: #5053ac;
 }
 .new_feat {
   display: flex;
@@ -121,21 +121,23 @@ header a {
   align-items: center;
 }
 .new {
-  background-color: green;
+  background-color: rgb(2, 182, 2);
   color: #fff;
   padding: 5px;
   border-radius: 5px;
   font-size: 8px;
   position: relative;
   left: -22px;
+  cursor: pointer;
 }
 .hero {
+  /*-Les divs en row-*/
   background-color: var(--x-beige);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   position: relative;
   top: 150px;
 }
@@ -144,9 +146,11 @@ header a {
   flex-direction: row;
   font-size: 80px;
   margin-bottom: 2px;
+  gap: 1rem;
 }
 .hero-p {
   margin-bottom: 15px;
+  font-family: "Black Han Sans";
 }
 .subtitle {
   font-family: "Montserrat";
@@ -167,8 +171,24 @@ header a {
   overflow: hidden;
 }
 .hero_text {
+  /*-Celui en column-*/
   display: flex;
   flex-direction: column;
   width: 550px;
   height: 320px;
+}
+.cta_command {
+  font-family: "Montserrat";
+  background-color: #ffc43d;
+  padding: 14px 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  font-weight: 500px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cta_command a {
+  text-decoration: none;
+  color: black;
 }
