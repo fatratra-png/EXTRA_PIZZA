@@ -79,6 +79,7 @@ header {
   font-weight: 500;
   letter-spacing: var(--letter-space-2b);
   position: fixed;
+  z-index: 1;
   width: 100vw;
 }
 ul {
@@ -129,15 +130,14 @@ header a {
   left: -22px;
 }
 .hero {
+  background-color: var(--x-beige);
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   gap: 25px;
   position: relative;
-  top: 240px;
-  left: -410px;
-  text-align: justify;
-  background-color: var(--x-beige);
+  top: 150px;
 }
 .hero h1 {
   font-size: 80px;
@@ -157,4 +157,16 @@ header a {
 }
 .span_red {
   color: var(--red);
+}
+.tacos {
+  position: relative;
+  top: -100px;
+  left: 570px;
+  overflow: hidden;
+}
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 320px;
 }
