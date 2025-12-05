@@ -126,8 +126,6 @@ header a {
   padding: 5px;
   border-radius: 5px;
   font-size: 8px;
-  position: relative;
-  left: -22px;
   cursor: pointer;
 }
 .hero {
