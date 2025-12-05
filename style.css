@@ -164,12 +164,6 @@ header a {
 .span_red {
   color: var(--red);
 }
-.tacos {
-  position: relative;
-  top: -100px;
-  left: 570px;
-  overflow: hidden;
-}
 .hero_text {
   /*-Celui en column-*/
   display: flex;
