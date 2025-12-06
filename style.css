@@ -198,6 +198,7 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-block: 40px;
 }
 .carroussel_container {
   display: flex;
@@ -206,12 +207,26 @@ header a {
   background-color: var(--red);
   gap: var(--font-size);
   overflow-x: scroll;
+  ::-webkit-scrollbar { display: none; }
+  scrollbar-width: none;
   height: auto;
   flex-shrink: 0;
 }
 .carroussel_item {
-  width: 300px;
+  width: 200px;
   aspect-ratio: 3/4;
   background-color: #2b2e7e;
   border-radius: 10px;
+  flex-shrink: 0;
+}
+.title {
+  text-align: center;
+  margin-block: var(--font-size-1b);
+}
+.title h2{ 
+  font-family: "Black Han Sans";
+  font-size: var(--font-size-3);
+}
+.title p {
+  font-family: "Montserrat";
 }
