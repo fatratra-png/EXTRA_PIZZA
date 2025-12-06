@@ -139,6 +139,7 @@ header a {
   height: 100vh;
   place-items: center;
   padding-top: 8vh;
+  mask-image: url(images/paint.svg);
 }
 .hero_image{
   width: 100%;
