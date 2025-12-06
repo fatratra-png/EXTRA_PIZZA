@@ -105,14 +105,50 @@ header a {
   color: var(--red);
 }
 
+.cta_reservation_section {
+  position: relative;
+  background-color: var(--light-blue);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  margin-right: var(--font-size-2);
+}
+.cta_reservation_section:hover {
+  background-color: #5053ac;
+}
+.new_feat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2ch;
+}
+.new {
+  background-color: rgb(2, 182, 2);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  cursor: pointer;
+}
 /*aruchiwa project do not touch !!!*/
+
+
 .title_restaurant {
+  width: 100%;
+  aspect-ratio: 1254/520;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 18vh; 
-  color: #1c1c1c;
+  color: var(--x-beige);
+  background-image: url('images/resto_6 (1).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 .title_restaurant hgroup {
   display: flex;
