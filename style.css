@@ -364,29 +364,3 @@ header a {
 #restaurant .title h2 {
   line-height: var(--line-height-1);
 }
-/*aruchiwa project do not touch !!!*/
-.title_restaurant {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 18vh; 
-  color: #1c1c1c;
-}
-.title_restaurant hgroup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8ch;
-  font-family:"Black Han Sans";
-  font-size: var(--font-size-5);
-}
-
-.blue{
-  color: var(--dark-blue);
-}
-.red{
-  color: var(--red); 
-}
-
-/*fin projet aruchiwa*/
