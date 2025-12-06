@@ -225,7 +225,7 @@ header a {
   display: none;
 }
 .carroussel_item {
-  width: 22%;
+  width: 20%;
   aspect-ratio: 3/4;
   border-radius: 10px;
   flex-shrink: 0;
