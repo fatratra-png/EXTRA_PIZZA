@@ -207,6 +207,7 @@ header a {
   gap: var(--font-size);
   overflow-x: scroll;
   height: auto;
+  flex-shrink: 0;
 }
 .carroussel_item {
   width: 300px;
