@@ -271,7 +271,8 @@ header a {
 }
 #resto {
   background-color: var(--dark-blue);
-  padding: 40px;
+  padding-inline: 40px;
+  padding-block: 40px calc(40px + var(--font-size-1b));
 }
 #resto .title {
   text-align: left;  
@@ -304,8 +305,44 @@ header a {
   border-radius: 15px;
   object-fit: cover;
 }
-
-
+#why {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+#why .title {
+  text-align: left;
+  padding-top: 40px;
+  text-wrap: wrap;
+  max-width: 80%;
+}
+#why .title p {
+  margin-top: var(--font-size);
+  line-height: var(--line-height);
+}
+.title a {
+  color: #1c1c1c;
+  background-color: var(--light-blue);
+  width: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: var(--font-size);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: var(--font-size-1b);
+  color: white;
+}
+#why img {
+  max-width: 90%;
+  border-radius: 10px;
+}
+.image {
+  padding: 40px;
+}
 /*aruchiwa project do not touch !!!*/
 .title_restaurant {
   display: flex;
