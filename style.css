@@ -204,27 +204,66 @@ header a {
   display: flex;
   flex-direction: row;
   width: 80%;
-  background-color: var(--red);
   gap: var(--font-size);
   overflow-x: scroll;
   overflow-y: hidden;
-  /* scrollbar-width: none; */
   height: auto;
   flex-wrap: nowrap;
   scroll-snap-type: x mandatory;
   padding: 0 20px;
   scrollbar-width: none;
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 2%,
+    rgba(0, 0, 0, 1) 98%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  margin-top: var(--font-size-4);
 }
 .carroussel_container::-webkit-scrollbar{
   display: none;
 }
 .carroussel_item {
-  width: 200px;
+  width: 22%;
   aspect-ratio: 3/4;
-  background-color: #2b2e7e;
   border-radius: 10px;
   flex-shrink: 0;
   scroll-snap-align: start;
+  margin-block: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 0 0 2px #777777;
+}
+.carroussel_item img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 80px);
+  border-radius: 10px 10px 0 0;
+}
+.card_content {
+  padding: 0 var(--font-size);
+  width: 100%;
+  height: 80px;
+  border-radius: 0 0 10px 10px;
+  background-color: hsla(238, 49%, 33%, 1);
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card_content h3 {
+  font-size: var(--font-size);
+  color: white;
+  font-weight: 800;
+}
+.card_content p {
+  align-self: flex-end;
+  color: white;
+  font-size: var(--font-size-1b);
+  margin-top: 10px;
 }
 .title {
   text-align: center;  
@@ -237,6 +276,7 @@ header a {
 .title p {
   font-family: "Montserrat";
 }
+
 /*aruchiwa project do not touch !!!*/
 .title_restaurant {
   display: flex;
