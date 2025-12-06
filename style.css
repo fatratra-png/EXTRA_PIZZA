@@ -305,19 +305,20 @@ header a {
   border-radius: 15px;
   object-fit: cover;
 }
-#why {
+#why, #restaurant {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
-#why .title {
+#why .title, #restaurant .title {
   text-align: left;
   padding-top: 40px;
   text-wrap: wrap;
   max-width: 80%;
+  line-height: var(--line-height-1b);
 }
-#why .title p {
-  margin-top: var(--font-size);
+#why .title p, #restaurant .title p {
+  margin-top: var(--line-height-2b);
   line-height: var(--line-height);
 }
 .title a {
@@ -333,15 +334,35 @@ header a {
   font-size: var(--font-size);
   padding: 20px;
   border-radius: 10px;
-  margin-top: var(--font-size-1b);
+  margin-top: var(--font-size-1); 
   color: white;
 }
-#why img {
+#why img, #restaurant img {
   max-width: 90%;
   border-radius: 10px;
+  max-height: 100%;
+}
+#restaurant .img {
+  aspect-ratio: 1/1;
+  max-height: 400px;
+  place-self: end;
+}
+#restaurant img {
+  object-fit: contain;
 }
 .image {
   padding: 40px;
+}
+#restaurant {
+  background-color: var(--x-beige);
+  padding: 40px;
+}
+#restaurant .title {
+  text-align: left;
+  margin-left: var(--font-size-6);
+}
+#restaurant .title h2 {
+  line-height: var(--line-height-1);
 }
 /*aruchiwa project do not touch !!!*/
 .title_restaurant {
