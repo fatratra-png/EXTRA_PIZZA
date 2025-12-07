@@ -144,7 +144,7 @@ header a {
   -webkit-mask-image: url(images/paint.svg);
   -webkit-mask-position: bottom;
 }
-.hero_image{
+.hero_image {
   width: 100%;
 }
 .hero_image img {
@@ -225,7 +225,7 @@ header a {
   );
   margin-top: var(--font-size-4);
 }
-.carroussel_container::-webkit-scrollbar{
+.carroussel_container::-webkit-scrollbar {
   display: none;
 }
 .carroussel_item {
@@ -270,7 +270,7 @@ header a {
   margin-top: 10px;
 }
 .title {
-  text-align: center;  
+  text-align: center;
   margin-block: var(--font-size-1b);
 }
 #resto {
@@ -279,11 +279,11 @@ header a {
   padding-block: 40px calc(40px + var(--font-size-1b));
 }
 #resto .title {
-  text-align: left;  
+  text-align: left;
   margin-left: var(--font-size-6);
   color: white;
 }
-.title h2{ 
+.title h2 {
   font-family: "Black Han Sans";
   font-size: var(--font-size-3);
 }
