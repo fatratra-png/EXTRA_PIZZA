@@ -366,3 +366,6 @@ header a {
 #restaurant .title h2 {
   line-height: var(--line-height-1);
 }
+#feedback {
+  padding: 40px;
+}
