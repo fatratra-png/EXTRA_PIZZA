@@ -141,6 +141,8 @@ header a {
   padding-top: 8vh;
   mask-image: url(images/paint.svg);
   mask-position: bottom;
+  -webkit-mask-image: url(images/paint.svg);
+  -webkit-mask-position: bottom;
 }
 .hero_image{
   width: 100%;
