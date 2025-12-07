@@ -269,6 +269,26 @@ header a {
   font-size: var(--font-size-1b);
   margin-top: 10px;
 }
+/*SPICY-Adding the css of the menu cta*/
+
+.cta_menu {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--font-size-4);
+}
+.cta_menu a {
+  font-family: "Montserrat";
+  background-color: var(--red);
+  padding: 14px 20px;
+  border-radius: 15px;
+  width: fit-content;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.cta_menu a:hover {
+  background-color: #b4040a;
+}
 .title {
   text-align: center;
   margin-block: var(--font-size-1b);
@@ -309,19 +329,22 @@ header a {
   border-radius: 15px;
   object-fit: cover;
 }
-#why, #restaurant {
+#why,
+#restaurant {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
-#why .title, #restaurant .title {
+#why .title,
+#restaurant .title {
   text-align: left;
   padding-top: 40px;
   text-wrap: wrap;
   max-width: 80%;
   line-height: var(--line-height-1b);
 }
-#why .title p, #restaurant .title p {
+#why .title p,
+#restaurant .title p {
   margin-top: var(--line-height-2b);
   line-height: var(--line-height);
 }
@@ -338,10 +361,11 @@ header a {
   font-size: var(--font-size);
   padding: 20px;
   border-radius: 10px;
-  margin-top: var(--font-size-1); 
+  margin-top: var(--font-size-1);
   color: white;
 }
-#why img, #restaurant img {
+#why img,
+#restaurant img {
   max-width: 90%;
   border-radius: 10px;
   max-height: 100%;
@@ -368,3 +392,4 @@ header a {
 #restaurant .title h2 {
   line-height: var(--line-height-1);
 }
+
