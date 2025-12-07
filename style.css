@@ -367,16 +367,15 @@ header a {
 #why img,
 #restaurant img {
   max-width: 90%;
-  border-radius: 10px;
-  max-height: 100%;
+  border-radius: 30px;
+  display: inline-block;
 }
 #restaurant .img {
-  aspect-ratio: 1/1;
-  max-height: 400px;
-  place-self: end;
+  display: flex;
+  justify-content: center;
 }
-#restaurant img {
-  object-fit: contain;
+#restaurant img:hover {
+  transform: scale(1.05);
 }
 .image {
   padding: 40px;
@@ -392,4 +391,3 @@ header a {
 #restaurant .title h2 {
   line-height: var(--line-height-1);
 }
-
