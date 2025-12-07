@@ -393,6 +393,10 @@ header a {
 }
 #feedback {
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .title p:nth-of-type(3) {
   padding-top: var(--font-size-2b);
@@ -400,7 +404,7 @@ header a {
 #infinite_carrousel {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
   overflow-x: scroll;
   mask-image: linear-gradient(
     90deg,
@@ -438,4 +442,12 @@ footer {
   width: 100%;
   height: 36vh;
   background-color: var(--light-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+}
+footer div img {
+  width: 70px;
+  aspect-ratio: 1/1;
+border-radius: 10px;
 }
