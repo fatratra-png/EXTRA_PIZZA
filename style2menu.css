@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* --- MAIN COLORS --- */
+  --dark-blue: #2b2e7e;
+  --light-blue: #4f518a;
+  --x-beige: #fcf0ec;
+  --red: #e40512;
+  --x-black: #1c1c1c;
+
+  /* --- FONT SIZES --- */
+
+  /* below the base */
+  --font-size-2b: 0.625rem;
+  --font-size-1b: 0.8125rem;
+
+  /* the base */
+  --font-size: 1rem;
+
+  /* above the base */
+  --font-size-1: 1.25rem;
+  --font-size-2: 1.5625rem;
+  --font-size-3: 2rem;
+  --font-size-4: 2.5rem;
+  --font-size-5: 3.1875rem;
+  --font-size-6: 4rem;
+  --font-size-7: 5rem;
+
+  /* --- LINE HEIGHTS --- */
+
+  /* below the base */
+  --line-height-2b: 2;
+  --line-height-1b: 1.5385;
+
+  /* the base */
+  --line-height: 1.5;
+
+  /* above the base */
+  --line-height-1: 1.4;
+  --line-height-2: 1.28;
+  --line-height-3: 1.25;
+  --line-height-4: 1.2;
+  --line-height-5: 1.1765;
+  --line-height-6: 1.125;
+
+  /* --- LETTER SPACING --- */
+
+  /* below the base */
+  --letter-space-2b: 0.074em;
+  --letter-space-1b: 0.05em;
+
+  /* the base */
+  --letter-space: 0.035em;
+
+  /* above the base */
+  --letter-space-1: 0.022em;
+  --letter-space-2: 0.0116em;
+  --letter-space-3: 0.0025em;
+  --letter-space-4: -0.004em;
+  --letter-space-5: -0.0096em;
+  --letter-space-6: -0.0137em;
+}
+header img {
+  background-color: var(--x-beige);
+  border-radius: 10px;
+  margin-left: var(--font-size-2);
+  aspect-ratio: 1/1;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 0.52rem;
+  font-family: "Montserrat";
+  font-size: var(--font-size);
+  font-weight: 500;
+  letter-spacing: var(--letter-space-2b);
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+li {
+  list-style: none;
+  height: 100%;
+  text-align: center;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+}
+.active {
+  color: var(--red);
+}
+.cta_reservation_section {
+  position: relative;
+  background-color: var(--light-blue);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  margin-right: var(--font-size-2);
+}
+.cta_reservation_section:hover {
+  background-color: #5053ac;
+}
+.new_feat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2ch;
+}
+.new {
+  background-color: rgb(2, 182, 2);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  cursor: pointer;
+}
+.tacos_factory {
+  /*-Les divs en row-*/
+  background-color: var(--x-beige);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  place-items: center;
+  padding-top: 8vh;
+}
+
+
+.tacos_factory h1 {
+  display: flex;
+  flex-direction: row;
+  font-size: var(--font-size-7);
+  gap: 1rem;
+  z-index: 1;
+}
+.tacos_factory_p {
+  margin-bottom: var(--font-size-1);
+  font-family: "Black Han Sans";
+  color: var(--x-black);
+  line-height: var(--line-height-3);
+}
+.subtitle {
+  font-family: "Montserrat";
+  z-index: 1;
+}
+.tacos_factory h1 span {
+  font-family: "Black Han Sans";
+  letter-spacing: var(--letter-space-6);
+  align-self: flex-start;
+}
+.span_blue {
+  color: var(--dark-blue);
+}
+.span_red {
+  color: var(--red);
+}
+.tacos_factory_text {
+  /*-Celui en column-*/
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 320px;
+}
+.tacos_factory img{
+  width:100%;
+  z-index: 0;
+}
+.cta_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1ch;
+}
+.cta_command {
+  font-family: "Montserrat";
+  background-color: #ffc43d;
+  padding: 14px 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  font-weight: 500px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cta_command_other {
+  font-family: "Montserrat";
+  background-color: orange;
+  padding: 14px 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  font-weight: 500px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cta_menu a {
+  text-decoration: none;
+  color: var(--x-black);
+}
+/*---Keyframes---*/
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-50px) translateX(15px) rotate(4deg);
+  }
+  50% {
+    transform: translateY(-65px) translateX(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-45px) translateX(-15px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+}
+/*---Floating Tacos---*/
+.floating_tacos1 {
+  position: absolute;
+  top: 300px;
+  left: 80px;
+  rotate: -35deg;
+  animation: float 15s ease-in-out infinite alternate;
+}
+.floating_tacos2 {
+  position: absolute;
+  bottom: 100px;
+  right: 1000px;
+  rotate: 30deg;
+  animation: float 15s ease-in-out infinite alternate;
+}
