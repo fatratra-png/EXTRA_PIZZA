@@ -164,9 +164,9 @@ body {
   background-image: url("images/resto_6 (1).jpg");
   background-size: cover;
   background-position: 50% 12%;
-  filter: blur(4px); /* flou */
+  filter: blur(4px); 
   transform: scale(1.1); /* évite les bordures de flou */
-  z-index: -1; /* reste derrière le h1 */
+  z-index: -1; /*anim permis*/
 }
 
 .title_restaurant hgroup {
@@ -194,7 +194,7 @@ body {
 }
 
 .search_bar {
-  display: flex; /* aligner icône et input en ligne */
+  display: flex; 
   align-items: center;
   background: #fff;
   border-radius: 25px;
@@ -217,7 +217,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  background: transparent; /* fond transparent car déjà dans le conteneur */
+  background: transparent; 
 }
 .icon_content {
   display: flex;
