@@ -394,3 +394,6 @@ header a {
 #feedback {
   padding: 40px;
 }
+.title p:nth-of-type(3) {
+  padding-top: var(--font-size-2b);
+}
