@@ -105,6 +105,10 @@ header a {
   color: var(--red);
 }
 
+body {
+  background-color: #252422;
+}
+
 .cta_reservation_section {
   position: relative;
   background-color: var(--light-blue);
@@ -134,36 +138,139 @@ header a {
 }
 /*aruchiwa project do not touch !!!*/
 
-
 .title_restaurant {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  position: relative;
+  height: 60vh;
   width: 100%;
   aspect-ratio: 1254/520;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 18vh; 
+  padding-top: 18vh;
   color: var(--x-beige);
-  background-image: url('images/resto_6 (1).jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
+  overflow: hidden;
 }
+
+.title_restaurant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/resto_6 (1).jpg");
+  background-size: cover;
+  background-position: 50% 12%;
+  filter: blur(4px); 
+  transform: scale(1.1); /* évite les bordures de flou */
+  z-index: -1; /*anim permis*/
+}
+
 .title_restaurant hgroup {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8ch;
-  font-family:"Black Han Sans";
+  font-family: "Black Han Sans";
   font-size: var(--font-size-5);
 }
 
-.blue{
+.blue {
   color: var(--dark-blue);
 }
-.red{
-  color: var(--red); 
+.red {
+  color: var(--red);
+}
+
+
+.search_content {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  justify-content: center;
+}
+
+.search_bar {
+  display: flex; 
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 58vh;
+}
+.search_bar i {
+  font-size: 18px;
+  color: #888;
+  background: #eee;
+  border-radius: 50%; 
+  padding: 6px;
+  margin-right: 10px; 
+  cursor: pointer;
+  transition: 0.3s;
+}
+.search_bar input {
+  flex: 1; /* occupe tout l’espace restant */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent; 
+}
+.icon_content {
+  display: flex;
+  flex-direction: row;
+  background-color: #252422;
+}
+
+.resto_content {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  gap:10ch
+}
+
+/*here for cards*/
+.restaurant-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin: 10px 0;
+  max-width: 600px;
+}
+
+.restaurant-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.restaurant-info {
+  flex: 1;
+}
+
+.restaurant-name {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+.restaurant-address {
+  font-size: 0.95em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.restaurant-rating i {
+  color: #FFD700; /* jaune doré */
+  margin-right: 3px;
 }
 
 /*fin projet aruchiwa*/
