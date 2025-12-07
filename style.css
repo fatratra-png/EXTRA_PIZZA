@@ -332,6 +332,7 @@ header a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
+  padding-bottom: 40px;
 }
 #why .title,
 #restaurant .title {
@@ -364,9 +365,9 @@ header a {
 }
 #why img,
 #restaurant img {
-  max-width: 90%;
+  max-height: 60vh;
+  height: 400px;
   border-radius: 30px;
-  display: inline-block;
 }
 #restaurant .img {
   display: flex;
