@@ -133,16 +133,14 @@ header a {
 }
 .hero {
   /*-Les divs en row-*/
-  background-color: var(--x-beige);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   place-items: center;
   padding-top: 8vh;
-  mask-image: url(images/paint.svg);
-  mask-position: bottom;
-  -webkit-mask-image: url(images/paint.svg);
-  -webkit-mask-position: bottom;
+  background-image: url("images/paint_2.svg");
+  background-position: bottom bottom;
+  background-size: contain;
 }
 .hero_image {
   width: 100%;
