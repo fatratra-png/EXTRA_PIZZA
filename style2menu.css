@@ -141,7 +141,6 @@ header a {
   padding-top: 8vh;
 }
 
-
 .tacos_factory h1 {
   display: flex;
   flex-direction: row;
@@ -177,8 +176,8 @@ header a {
   width: 550px;
   height: 320px;
 }
-.tacos_factory img{
-  width:100%;
+.tacos_factory img {
+  width: 100%;
   z-index: 0;
 }
 .cta_menu {
@@ -244,4 +243,86 @@ header a {
   right: 1000px;
   rotate: 30deg;
   animation: float 15s ease-in-out infinite alternate;
+}
+.carroussel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+}
+.carroussel_container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: var(--font-size);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: auto;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+  padding: 0 20px;
+  scrollbar-width: none;
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 2%,
+    rgba(0, 0, 0, 1) 98%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  margin-top: var(--font-size-4);
+}
+.carroussel_container::-webkit-scrollbar {
+  display: none;
+}
+.carroussel_item {
+  width: 20%;
+  aspect-ratio: 3/4;
+  border-radius: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  margin-block: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 0 0 2px #777777;
+}
+.carroussel_item img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% - 80px);
+  border-radius: 10px 10px 0 0;
+}
+.card_content {
+  padding: 0 var(--font-size);
+  width: 100%;
+  height: 80px;
+  border-radius: 0 0 10px 10px;
+  background-color: hsla(238, 49%, 33%, 1);
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card_content h3 {
+  font-size: var(--font-size);
+  color: white;
+  font-weight: 800;
+}
+.card_content p {
+  align-self: flex-end;
+  color: white;
+  font-size: var(--font-size-1b);
+  margin-top: 10px;
+}
+.title {
+  text-align: center;
+  margin-block: var(--font-size-1b);
+}
+.title h2 {
+  font-family: "Black Han Sans";
+  font-size: var(--font-size-3);
+}
+.title p {
+  font-family: "Montserrat";
 }
