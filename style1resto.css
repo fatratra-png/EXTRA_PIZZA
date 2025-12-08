@@ -252,6 +252,13 @@ body {
   margin-right: 15px;
 }
 
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap : 2ch
+}
 .restaurant-info {
   flex: 1;
 }
@@ -272,5 +279,7 @@ body {
   color: #FFD700; /* jaune doré */
   margin-right: 3px;
 }
+
+
 
 /*fin projet aruchiwa*/
