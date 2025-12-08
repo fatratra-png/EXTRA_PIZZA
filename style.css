@@ -461,9 +461,25 @@ footer div p {
 footer div a {
   text-decoration: none;
   background-color: var(--dark-blue);
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   font-size: var(--font-size-2b);
   box-sizing: border-box;
   display: block;
+  text-wrap: wrap;
+  width: 50%;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+}
+.download_cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size-2b);
+  margin-top: var(--font-size-3);
+}
+.download_cta a {
+  font-weight: bold;
+}
+.download_cta a i {
+  margin-right: var(--font-size-2b);
 }
