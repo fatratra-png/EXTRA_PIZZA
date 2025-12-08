@@ -424,14 +424,12 @@ header a {
 }
 .slide_item {
   background-color: var(--dark-blue);
-  width: 310px;
   flex-shrink: 0;
   max-height: 440px;
   border-radius: 20px;
   object-fit: cover;
 }
 .slide_item img {
-  width: 310px;
   max-height: 440px;
   border-radius: 20px;
 
