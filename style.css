@@ -263,8 +263,9 @@ header a {
 }
 .card_content p {
   align-self: flex-end;
-  color: white;
-  font-size: var(--font-size-1b);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: bolder;
   margin-top: 10px;
 }
 /*SPICY-Adding the css of the menu cta*/
@@ -432,7 +433,6 @@ header a {
 .slide_item img {
   max-height: 440px;
   border-radius: 20px;
-
 }
 .group:nth-child(1) {
   margin-right: var(--font-size);
@@ -454,7 +454,7 @@ footer {
 footer div img {
   width: 100px;
   aspect-ratio: 1/1;
-border-radius: 10px;
+  border-radius: 10px;
 }
 footer div p {
   margin-top: var(--font-size-2b);
@@ -481,7 +481,7 @@ footer div p {
   text-wrap: wrap;
   width: 70%;
   border-radius: 10px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 .download_cta a i {
   margin-right: var(--font-size-2b);
@@ -513,13 +513,23 @@ hr {
   margin-inline: auto;
 }
 .copyright {
+  display: flex;
+  justify-content: center;
   background-color: var(--light-blue);
   padding: 10px 30px;
   font-family: "Montserrat";
   font-size: var(--font-size);
   color: white;
+  padding-block: 1rem;
+}
+.copyright span {
+  font-weight: bold;
+  margin-left: 5px;
 }
 .side {
   display: flex;
   flex-direction: row;
+}
+ul li .mail {
+  text-decoration: underline;
 }
