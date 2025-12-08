@@ -430,7 +430,8 @@ header a {
   border-radius: 20px;
 }
 .slide_item img {
-  width: 300px;
+  width: 315px;
+  max-height: 440px;
   border-radius: 20px;
 }
 .group:nth-child(1) {
