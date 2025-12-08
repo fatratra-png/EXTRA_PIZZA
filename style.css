@@ -424,9 +424,13 @@ header a {
 }
 .slide_item {
   background-color: var(--dark-blue);
-  height: 100px;
+  object-fit: cover;
   width: 300px;
   flex-shrink: 0;
+  border-radius: 20px;
+}
+.slide_item img {
+  width: 300px;
   border-radius: 20px;
 }
 .group:nth-child(1) {
