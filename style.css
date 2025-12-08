@@ -84,14 +84,14 @@ header {
   z-index: 1;
   width: 100vw;
 }
-ul {
+header ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 50px;
   height: 100%;
 }
-li {
+header ul li {
   list-style: none;
   height: 100%;
   text-align: center;
@@ -439,7 +439,7 @@ header a {
 }
 @keyframes spin {
   to {
-    translate: -1000px;
+    translate: -100%;
   }
 }
 
@@ -449,7 +449,7 @@ footer {
   background-color: var(--light-blue);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 20px;
+  padding: 40px;
 }
 footer div img {
   width: 100px;
@@ -463,19 +463,6 @@ footer div p {
   font-weight: 600;
   color: white;
 }
-footer div a {
-  text-decoration: none;
-  background-color: var(--dark-blue);
-  padding: 10px;
-  color: #fff;
-  font-size: var(--font-size-2b);
-  box-sizing: border-box;
-  display: block;
-  text-wrap: wrap;
-  width: 50%;
-  border-radius: 10px;
-  font-family: 'Montserrat';
-}
 .download_cta {
   display: flex;
   flex-direction: column;
@@ -484,7 +471,55 @@ footer div a {
 }
 .download_cta a {
   font-weight: bold;
+  text-decoration: none;
+  background-color: var(--dark-blue);
+  padding: 10px;
+  color: #fff;
+  font-size: var(--font-size-1b);
+  box-sizing: border-box;
+  display: block;
+  text-wrap: wrap;
+  width: 70%;
+  border-radius: 10px;
+  font-family: 'Montserrat';
 }
 .download_cta a i {
   margin-right: var(--font-size-2b);
+}
+.column {
+  font-family: "Black Han Sans";
+  font-size: var(--font-size);
+}
+.column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 10px;
+  margin-top: var(--font-size);
+}
+.column ul li {
+  list-style: none;
+  font-family: "Montserrat";
+  color: #fff;
+  margin-top: var(--font-size-2b);
+}
+.column a {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  width: 50%;
+  border: 1px solid #fff;
+  margin-inline: auto;
+}
+.copyright {
+  background-color: var(--light-blue);
+  padding: 10px 30px;
+  font-family: "Montserrat";
+  font-size: var(--font-size);
+  color: white;
+}
+.side {
+  display: flex;
+  flex-direction: row;
 }
