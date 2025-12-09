@@ -1,0 +1,120 @@
+:root {
+  --dark-blue: #2b2e7e;
+  --light-blue: #4f518a;
+  --x-beige: #fcf0ec;
+  --red: #e40512;
+  --x-black: #1c1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--x-beige);
+  color: var(--x-black);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  padding: 40px;
+  z-index: 5;
+}
+
+.logo-space {
+  width: 200px;
+  aspect-ratio: 1/1;
+  margin: 0 auto 20px auto;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--light-blue);
+}
+
+.error-title {
+  font-size: 140px;
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+
+.subtitle {
+  font-size: 28px;
+  margin-top: -10px;
+  color: var(--light-blue);}
+
+.beta {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--x-black);
+}
+
+/* Animation des cœurs */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-50px) translateX(15px) rotate(4deg);
+  }
+  50% {
+    transform: translateY(-65px) translateX(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-45px) translateX(-15px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+}
+
+.floating_heart1 {
+  position: absolute;
+  top: 250px;
+  left: -30px;
+  width: 140px;
+  animation: float 15s ease-in-out infinite alternate;
+}
+
+.floating_heart2 {
+  position: absolute;
+  bottom: 200px;
+  right: -40px;
+  width: 140px;
+  animation: float 15s ease-in-out infinite alternate;
+}
+.back-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: var(--red);
+  color: var(--x-beige);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-btn:hover {
+  background: var(--light-blue);
+  color: var(--x-beige);
+  transform: translateY(-3px);
+}
