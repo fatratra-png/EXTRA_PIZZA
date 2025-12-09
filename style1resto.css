@@ -84,14 +84,14 @@ header {
   z-index: 1;
   width: 100vw;
 }
-ul {
+header ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 50px;
   height: 100%;
 }
-li {
+header ul li {
   list-style: none;
   height: 100%;
   text-align: center;
@@ -106,7 +106,7 @@ header a {
 }
 
 body {
-  background-color: #ffffff;  
+  background-color: #ffffff;
 }
 
 .cta_reservation_section {
@@ -164,7 +164,7 @@ body {
   background-image: url("images/resto_6 (1).jpg");
   background-size: cover;
   background-position: 50% 12%;
-  filter: blur(4px); 
+  filter: blur(4px);
   transform: scale(1.1); /* évite les bordures de flou */
   z-index: -1; /*anim permis*/
 }
@@ -185,7 +185,6 @@ body {
   color: var(--red);
 }
 
-
 .search_content {
   display: flex;
   flex-direction: column;
@@ -194,7 +193,7 @@ body {
 }
 
 .search_bar {
-  display: flex; 
+  display: flex;
   align-items: center;
   background: #fff;
   border-radius: 25px;
@@ -206,9 +205,9 @@ body {
   font-size: 18px;
   color: #888;
   background: #eee;
-  border-radius: 50%; 
+  border-radius: 50%;
   padding: 6px;
-  margin-right: 10px; 
+  margin-right: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -217,7 +216,7 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  background: transparent; 
+  background: transparent;
 }
 .icon_content {
   display: flex;
@@ -229,7 +228,7 @@ body {
   padding-top: 10vh;
   display: flex;
   flex-direction: row;
-  gap:10ch
+  gap: 10ch;
 }
 
 /*here for cards*/
@@ -238,7 +237,7 @@ body {
   align-items: center;
   background-color: #f8f8f8;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   margin: 10px 0;
   max-width: 600px;
@@ -252,12 +251,11 @@ body {
   margin-right: 15px;
 }
 
-
 .line {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap : 2ch
+  gap: 2ch;
 }
 .restaurant-info {
   flex: 1;
@@ -276,10 +274,99 @@ body {
 }
 
 .restaurant-rating i {
-  color: #FFD700; /* jaune doré */
+  color: #ffd700; /* jaune doré */
   margin-right: 3px;
 }
 
-
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--light-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 40px;
+}
+footer div img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+footer div p {
+  margin-top: var(--font-size-2b);
+  font-family: "Montserrat";
+  font-size: var(--font-size-1b);
+  font-weight: 600;
+  color: white;
+}
+.download_cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size-2b);
+  margin-top: var(--font-size-3);
+}
+.download_cta a {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--dark-blue);
+  padding: 10px;
+  color: #fff;
+  font-size: var(--font-size-1b);
+  box-sizing: border-box;
+  display: block;
+  text-wrap: wrap;
+  width: 70%;
+  border-radius: 10px;
+  font-family: "Montserrat";
+}
+.download_cta a i {
+  margin-right: var(--font-size-2b);
+}
+.column {
+  font-family: "Black Han Sans";
+  font-size: var(--font-size);
+}
+.column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 10px;
+  margin-top: var(--font-size);
+}
+.column ul li {
+  list-style: none;
+  font-family: "Montserrat";
+  color: #fff;
+  margin-top: var(--font-size-2b);
+}
+.column a {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  width: 50%;
+  border: 1px solid #fff;
+  margin-inline: auto;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-blue);
+  padding: 10px 30px;
+  font-family: "Montserrat";
+  font-size: var(--font-size);
+  color: white;
+  padding-block: 1rem;
+}
+.copyright span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.side {
+  display: flex;
+  flex-direction: row;
+}
+ul li .mail {
+  text-decoration: underline;
+}
 
 /*fin projet aruchiwa*/
