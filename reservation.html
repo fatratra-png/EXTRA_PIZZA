@@ -25,7 +25,7 @@
         <img src="images/extrapizza_icon.webp" alt="Extra Pizza" width="50" height="50" />
         <ul>
             <li>
-                <a href="#" class="active"> Accueil </a>
+                <a href="index.html"> Accueil </a>
             </li>
             <li>
                 <a href="menu.html">Menu</a>
@@ -41,4 +41,157 @@
             <div class="empty"></div>
         </section>
     </header>
+    <main class="reservation-page">
+
+        <section class="reservation-header">
+            <h1>Réserver une table</h1>
+            <p>Toutes les informations nécessaires pour préparer votre venue.</p>
+        </section>
+
+        <form class="reservation-form">
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Nom complet</label>
+                    <input type="text" placeholder="Votre nom">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="exemple@mail.com">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Téléphone</label>
+                    <input type="tel" placeholder="034 12 345 67">
+                </div>
+
+                <div class="input-group">
+                    <label>Préférence de contact</label>
+                    <select>
+                        <option>Téléphone</option>
+                        <option>Email</option>
+                        <option>SMS</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Lieu à réserver</label>
+                <select>
+                    <option>Salle principale</option>
+                    <option>Terrasse</option>
+                    <option>Salon VIP</option>
+                    <option>Espace romantique</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+                <div class="input-group">
+                    <label>Heure</label>
+                    <input type="time">
+                </div>
+                <div class="input-group">
+                    <label>Durée (approx.)</label>
+                    <select>
+                        <option>1h</option>
+                        <option>1h30</option>
+                        <option>2h</option>
+                        <option>2h30+</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Nombre de personnes</label>
+                    <input type="number" min="1" placeholder="Ex: 4">
+                </div>
+
+                <div class="input-group">
+                    <label>Type de table</label>
+                    <select>
+                        <option>Standard</option>
+                        <option>Ronde</option>
+                        <option>Haute</option>
+                        <option>Basse</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Occasion spéciale</label>
+                <select>
+                    <option>Aucune</option>
+                    <option>Anniversaire</option>
+                    <option>Demande en mariage</option>
+                    <option>Dîner romantique</option>
+                    <option>Réunion professionnelle</option>
+                </select>
+            </div>
+
+            <div class="row toggle-line">
+                <label>Commander en avance ?</label>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="row toggle-line">
+                <label>Besoin d’un parking ?</label>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="row toggle-line">
+                <label>Siège bébé ?</label>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="input-group">
+                <label>Allergies ou restrictions alimentaires</label>
+                <textarea placeholder="Ex: Arachides, lactose, végétarien..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>Serveur préféré (optionnel)</label>
+                <select>
+                    <option>Aucun</option>
+                    <option>John Doe</option>
+                    <option></option>
+                    <option>Yanis</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Instructions spéciales</label>
+                <textarea placeholder="Gâteau, bougies, déco, musique..."></textarea>
+            </div>
+
+            <div class="confirm">
+                <input type="checkbox">
+                <span>Je confirme que les informations fournies sont correctes.</span>
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="Confirmer" class="confirm-input">
+
+                <input type="button" value="Annuler" class="cancel-input" onclick="history.back()">
+            </div>
+
+
+        </form>
+
+    </main>
 </body>

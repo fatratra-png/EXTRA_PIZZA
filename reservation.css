@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* --- MAIN COLORS --- */
+  --dark-blue: #2b2e7e;
+  --light-blue: #4f518a;
+  --x-beige: #fcf0ec;
+  --red: #e40512;
+  --x-black: #1c1c1c;
+
+  /* --- FONT SIZES --- */
+
+  /* below the base */
+  --font-size-2b: 0.625rem;
+  --font-size-1b: 0.8125rem;
+
+  /* the base */
+  --font-size: 1rem;
+
+  /* above the base */
+  --font-size-1: 1.25rem;
+  --font-size-2: 1.5625rem;
+  --font-size-3: 2rem;
+  --font-size-4: 2.5rem;
+  --font-size-5: 3.1875rem;
+  --font-size-6: 4rem;
+  --font-size-7: 5rem;
+
+  /* --- LINE HEIGHTS --- */
+
+  /* below the base */
+  --line-height-2b: 2;
+  --line-height-1b: 1.5385;
+
+  /* the base */
+  --line-height: 1.5;
+
+  /* above the base */
+  --line-height-1: 1.4;
+  --line-height-2: 1.28;
+  --line-height-3: 1.25;
+  --line-height-4: 1.2;
+  --line-height-5: 1.1765;
+  --line-height-6: 1.125;
+
+  /* --- LETTER SPACING --- */
+
+  /* below the base */
+  --letter-space-2b: 0.074em;
+  --letter-space-1b: 0.05em;
+
+  /* the base */
+  --letter-space: 0.035em;
+
+  /* above the base */
+  --letter-space-1: 0.022em;
+  --letter-space-2: 0.0116em;
+  --letter-space-3: 0.0025em;
+  --letter-space-4: -0.004em;
+  --letter-space-5: -0.0096em;
+  --letter-space-6: -0.0137em;
+}
+header img {
+  background-color: var(--x-beige);
+  border-radius: 10px;
+  margin-left: var(--font-size-2);
+  aspect-ratio: 1/1;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 0.52rem;
+  font-family: "Montserrat";
+  font-size: var(--font-size);
+  font-weight: 500;
+  letter-spacing: var(--letter-space-2b);
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+header ul li {
+  list-style: none;
+  height: 100%;
+  text-align: center;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+}
+.active {
+  color: var(--red);
+}
+.cta_reservation_section {
+  position: relative;
+  background-color: var(--light-blue);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  margin-right: var(--font-size-2);
+}
+.cta_reservation_section:hover {
+  background-color: #5053ac;
+}
+.new_feat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2ch;
+}
+.new {
+  background-color: rgb(2, 182, 2);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+main {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--x-beige);
+}
+
+.reservation-page {
+  padding: 120px 40px 60px; /* place pour la navbar */
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--dark-blue), var(--light-blue));
+}
+
+.reservation-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reservation-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.reservation-form {
+  background: var(--x-black);
+  padding: 40px;
+  border-radius: 18px;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--light-blue);
+  color: var(--x-beige);
+  outline: none;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .input-group {
+  flex: 1;
+}
+
+.toggle-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  background: #ccc;
+  border-radius: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background: var(--red);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+.form-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.confirm-input,
+.cancel-input {
+  flex: 1;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+/* CONFIRMER (rouge) */
+.confirm-input {
+  background: lightseagreen;
+  color: var(--x-beige);
+  font-weight: 600;
+}
+
+.confirm-input:hover {
+  background: greenyellow;
+  transform: translateY(-3px);
+  color: black;
+}
+
+/* ANNULER (transparent avec bord) */
+.cancel-input {
+  background-color: #ff4c55;
+  color: var(--x-black);
+  font-weight: 600;
+}
+
+.cancel-input:hover {
+  background: var(--red);
+  color: var(--x-beige);
+  transform: translateY(-3px);
+}
