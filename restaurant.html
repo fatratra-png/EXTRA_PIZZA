@@ -1,150 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Han+Sans&family=Courgette&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Extra Pizza</title>
+    <link
+      rel="shortcut icon"
+      href="images/extrapizza_head_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style1resto.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Han+Sans&family=Courgette&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Extra Pizza</title>
-  <link rel="shortcut icon" href="images/extrapizza_head_icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style1resto.css" />
-</head>
+  <body>
+    <header>
+      <img
+        src="images/extrapizza_icon.webp"
+        alt="Extra Pizza"
+        width="50"
+        height="50"
+      />
+      <ul>
+        <li>
+          <a href="index.html"> Accueil </a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="#" class="active"> Restaurant </a>
+        </li>
+        <li class="new_feat">
+          <a href="extrapp.html"> Extr'App </a><span class="new">NEW</span>
+        </li>
+      </ul>
+      <section class="cta_reservation_section">
+        <i class="fa-solid fa-utensils"></i
+        ><a href="reservation.html" class="cta_reservation">
+          Réserver une table
+        </a>
+      </section>
+    </header>
 
-<body>
-  <header>
-    <img src="images/extrapizza_icon.webp" alt="Extra Pizza" width="50" height="50" />
-    <ul>
-      <li>
-        <a href="index.html"> Accueil </a>
-      </li>
-      <li>
-        <a href="menu.html">Menu</a>
-      </li>
-      <li>
-        <a href="#" class="active"> Restaurant </a>
-      </li>
-      <li class="new_feat"><a href="extrapp.html"> Extr'App </a><span class="new">NEW</span></li>
-    </ul>
-    <section class="cta_reservation_section">
-      <i class="fa-solid fa-utensils"></i><a href="reservation.html" class="cta_reservation"> Réserver une table </a>
+    <section class="title_restaurant">
+      <h1>
+        <span>TROUVER VOTRE</span><br />
+        <hgroup>
+          <span>RESTAURANT </span>
+          <span class="blue">EXTRA</span>
+          <span class="red">PIZZA</span>
+        </hgroup>
+      </h1>
+
+      <div class="search_content">
+        <div class="search_bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Saisissez ici votre adresse, votre code postal ou votre ville"
+          />
+        </div>
+        <div class="incon_content">
+          <i class="fa-solid fa-location-arrow"></i>
+          <span>Utiliser ma position</span>
+        </div>
+      </div>
     </section>
-  </header>
+    <section class="resto_content">
+      <!-- GRID DES RESTOS -->
+      <div class="resto-grid">
+        <div class="info-resto">
+          <img src="images/resto_1.jpg" alt="Resto 1" />
+          <h3>Extra pizza 1</h3>
+          <div class="stars">★★★★★</div>
+        </div>
 
-  <section class="title_restaurant">
-    <h1>
-      <span>TROUVER VOTRE</span><br />
-      <hgroup>
-        <span>RESTAURANT </span>
-        <span class="blue">EXTRA</span>
-        <span class="red">PIZZA</span>
-      </hgroup>
-    </h1>
+        <div class="info-resto">
+          <img src="images/resto_2.jpg" alt="Resto 2" />
+          <h3>Extra pizza</h3>
+          <div class="stars">★★★★☆</div>
+        </div>
 
-    <div class="search_content">
-      <div class="search_bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" name="search" id="search"
-          placeholder="Saisissez ici votre adresse, votre code postal ou votre ville" />
+        <div class="info-resto">
+          <img src="images/resto_3.jpg" alt="Resto 3" />
+          <h3>Extra pizza</h3>
+          <div class="stars">★★★☆☆</div>
+        </div>
+
+        <div class="info-resto">
+          <img src="images/resto_1.jpg" alt="Resto 4" />
+          <h3>Extra pizza</h3>
+          <div class="stars">★★★★★</div>
+        </div>
+
+        <div class="info-resto">
+          <img src="images/resto_1.jpg" alt="Resto 5" />
+          <h3>Nom du restaurant 5</h3>
+          <div class="stars">★★★★☆</div>
+        </div>
+
+        <div class="info-resto">
+          <img src="images/resto_1.jpg" alt="Resto 6" />
+          <h3>Nom du restaurant 6</h3>
+          <div class="stars">★★★☆☆</div>
+        </div>
       </div>
-      <div class="incon_content">
-        <i class="fa-solid fa-location-arrow"></i>
-        <span>Utiliser ma position</span>
-      </div>
-    </div>
-  </section>
 
-  <section class="resto_content">
-
-
-    <div class="multi-cards">
-      <div class="line">
-        <div class="resto_container" id="resto_section">
-
-            <div class="menu_resto"><img src="images/pizza_du_chef.jpeg">
-                <div class="card_content">
-                    <h3>Pizza du chef</h3>
-                    <p>23,000 AR</p>
-                </div>
-            </div>
-            <div class="menu_resto"><img src="images/pizza_extra.jpeg">
-                <div class="card_content">
-                    <h3>Pizza EXtra</h3>
-                    <p>23,000 AR</p>
-                </div>
-            </div>
-            <div class="menu_resto"><img src="images/pizza_chiken_bacon.jpeg">
-                <div class="card_content">
-                    <h3>Pizza Chiken Bacon</h3>
-                    <p>24,000 AR</p>
-                </div>
-            </div>
-      </div>
       <div class="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d60393.53901951003!2d47.5151825!3d-18.9049873!3m2!1i1024!2i768!4f13.1!2m1!1sextra%20pizza!5e0!3m2!1sfr!2smg!4v1765182380089!5m2!1sfr!2smg"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-  </section>
-  <footer>
-    <div>
-      <img src="images/extrapizza_icon.webp" alt="">
-      <p>Leader du French Tacos et <br>
-        créateur de la pizza feuilletée</p>
-      <div class="download_cta">
-        <a href="" class="side"><i class="fa-brands fa-google-play"></i>
-          <p>Download in Play Store</p>
-        </a>
-        <a href="" class="side"><i class="fa-brands fa-apple"></i>
-          <p>Download in Apple Store</p>
-        </a>
+    </section>
+    <footer>
+      <div>
+        <img src="images/extrapizza_icon.webp" alt="" />
+        <p>
+          Leader du French Tacos et <br />
+          créateur de la pizza feuilletée
+        </p>
+        <div class="download_cta">
+          <a href="" class="side"
+            ><i class="fa-brands fa-google-play"></i>
+            <p>Download in Play Store</p>
+          </a>
+          <a href="" class="side"
+            ><i class="fa-brands fa-apple"></i>
+            <p>Download in Apple Store</p>
+          </a>
+        </div>
       </div>
+      <div class="column">
+        <h2>EXPLORE</h2>
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Restaurant</a></li>
+          <li><a href="">Extr'app</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>SERVICES</h2>
+        <ul>
+          <li><a href="">Réserver une table</a></li>
+          <li><a href="">Livraison</a></li>
+          <li><a href="">Resto le plus près</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>CONTACT</h2>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> +261 34 00 000 00</li>
+          <li>
+            <i class="fa-brands fa-instagram"></i> @extra_pizza_madagascar
+          </li>
+          <li><i class="fa-brands fa-facebook-f"></i> Extra Pizza</li>
+          <li>
+            <i class="fa-solid fa-envelope"></i
+            ><a href="" class="mail"> contact.extrapizza@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <hr />
+    <div class="copyright">
+      &copy; 2025 by <span>Ny Fatratra RAFANOMEZANTSOA (Spicy) </span>,
+      <span>Isaac Abderman </span> and <span> Santatriniaina RAHOBIZAFY</span>.
+      All rights reserved.
     </div>
-    <div class="column">
-      <h2>
-        EXPLORE
-      </h2>
-      <ul>
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Restaurant</a></li>
-        <li><a href="">Extr'app</a></li>
-      </ul>
-    </div>
-    <div class="column">
-      <h2>
-        SERVICES
-      </h2>
-      <ul>
-        <li><a href="">Réserver une table</a></li>
-        <li><a href="">Livraison</a></li>
-        <li><a href="">Resto le plus près</a></li>
-      </ul>
-    </div>
-    <div class="column">
-      <h2>
-        CONTACT
-      </h2>
-      <ul>
-        <li><i class="fa-solid fa-phone"></i> +261 34 00 000 00</li>
-        <li><i class="fa-brands fa-instagram"></i> @extra_pizza_madagascar</li>
-        <li><i class="fa-brands fa-facebook-f"></i> Extra Pizza</li>
-        <li><i class="fa-solid fa-envelope"></i><a href="" class="mail"> contact.extrapizza@gmail.com</a></li>
-      </ul>
-    </div>
-  </footer>
-  <hr>
-  <div class="copyright">
-    &copy; 2025 by <span>Ny Fatratra RAFANOMEZANTSOA (Spicy) </span>, <span>Isaac Abderman </span> and <span>
-      Santatriniaina RAHOBIZAFY</span>. All rights reserved.
-  </div>
-</body>
-
+  </body>
 </html>
