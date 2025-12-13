@@ -224,3 +224,236 @@ hr {
 ul li .mail {
   text-decoration: underline;
 }
+.extrapp-main {
+  padding-top: 90px; /* Pour compenser le header fixed */
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* ---------------- Intro Section ---------------- */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10% 100px;
+  background: linear-gradient(
+    135deg,
+    var(--dark-blue) 0%,
+    var(--light-blue) 100%
+  );
+  color: white;
+  gap: 50px;
+}
+
+.intro-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--font-size-6);
+  font-weight: 800;
+  line-height: var(--line-height-6);
+  margin-bottom: 10px;
+}
+
+.intro-content h1 span {
+  color: var(--red);
+}
+
+.subtitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.description {
+  font-size: var(--font-size-1);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.intro-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Boutons téléchargement */
+.download-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.download-btn {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.download-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.download-btn i {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.download-btn div span {
+  display: block;
+  font-size: var(--font-size-1b);
+  opacity: 0.9;
+}
+
+.download-btn div strong {
+  font-size: var(--font-size-1);
+  font-weight: 600;
+}
+
+/* ---------------- Features Section ---------------- */
+.features-section {
+  padding: 100px 10%;
+  text-align: center;
+  background-color: white;
+}
+
+.features-section h2 {
+  font-family: "Montserrat";
+  font-size: var(--font-size-5);
+  color: var(--dark-blue);
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.feature-card {
+  padding: 40px 20px;
+  border-radius: 16px;
+  background: var(--x-beige);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card i {
+  font-size: 3rem;
+  color: var(--red);
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-family: "Montserrat";
+  font-size: var(--font-size-2);
+  color: var(--x-black);
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ---------------- CTA Download Section ---------------- */
+.download-cta-section {
+  padding: 100px 10%;
+  text-align: center;
+  background: linear-gradient(135deg, var(--red) 0%, #ff3838 100%);
+  color: white;
+}
+
+.download-cta-section h2 {
+  font-size: var(--font-size-5);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.download-cta-section p {
+  font-size: var(--font-size-1);
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.download-btn.large {
+  min-width: 240px;
+  padding: 18px 30px;
+  background: white;
+  color: var(--x-black);
+  font-weight: 600;
+}
+
+.download-btn.large i {
+  color: var(--x-black);
+}
+
+.download-btn.large:hover {
+  background: #f0f0f0;
+}
+
+/* ---------------- Team Section ---------------- */
+.team-section {
+  padding: 100px 10%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-family: "Montserrat";
+  font-size: var(--font-size-5);
+  color: var(--dark-blue);
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--red);
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-family: "Montserrat";
+  font-size: var(--font-size-2);
+  color: var(--x-black);
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: var(--font-size);
+  color: var(--dark-blue);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.nickname {
+  font-family: "Kaushan Script";
+  font-size: var(--font-size-1);
+  color: var(--red);
+}
