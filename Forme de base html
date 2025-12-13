@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Han+Sans&family=Courgette&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Extra Pizza</title>
+  <link rel="shortcut icon" href="images/extrapizza_head_icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <img src="images/extrapizza_icon.webp" alt="Extra Pizza" width="50" height="50" />
+    <ul>
+      <li>
+        <a href="index.html" class="active"> Accueil </a>
+      </li>
+      <li>
+        <a href="menu.html">Menu</a>
+      </li>
+      <li>
+        <a href="restaurant.html"> Restaurant </a>
+      </li>
+      <li class="new_feat">
+        <a href="extrapp.html" class="active"> Extr'App </a><span class="new">NEW</span>
+      </li>
+    </ul>
+    <section class="cta_reservation_section">
+      <i class="fa-solid fa-utensils"></i><a href="reservation.html" class="cta_reservation"> Réserver une table </a>
+    </section>
+  </header>
+
+
+  <!--Body-->
+
+
+   <footer>
+    <div>
+      <img src="images/extrapizza_icon.webp" alt="">
+      <p>Leader du French Tacos et <br>
+        créateur de la pizza feuilletée</p>
+      <div class="download_cta">
+        <a href="" class="side"><i class="fa-brands fa-google-play"></i>
+          <p>Download in Play Store</p>
+        </a>
+        <a href="" class="side"><i class="fa-brands fa-apple"></i>
+          <p>Download in Apple Store</p>
+        </a>
+      </div>
+    </div>
+    <div class="column">
+      <h2>
+        EXPLORE
+      </h2>
+      <ul>
+        <li><a href="">Accueil</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Restaurant</a></li>
+        <li><a href="">Extr'app</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>
+        SERVICES
+      </h2>
+      <ul>
+        <li><a href="">Réserver une table</a></li>
+        <li><a href="">Livraison</a></li>
+        <li><a href="">Resto le plus près</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>
+        CONTACT
+      </h2>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> +261 34 00 000 00</li>
+        <li><i class="fa-brands fa-instagram"></i> @extra_pizza_madagascar</li>
+        <li><i class="fa-brands fa-facebook-f"></i> Extra Pizza</li>
+        <li><i class="fa-solid fa-envelope"></i><a href="" class="mail"> contact.extrapizza@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+  <hr>
+  <div class="copyright">
+    &copy; 2025 by <span>Ny Fatratra RAFANOMEZANTSOA (Spicy) </span>, <span>Isaac Abderman </span> and <span>
+      Santatriniaina RAHOBIZAFY</span>. All rights reserved.
+  </div>
+
+

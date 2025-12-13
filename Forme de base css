@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* --- MAIN COLORS --- */
+  --dark-blue: #2b2e7e;
+  --light-blue: #4f518a;
+  --x-beige: #fcf0ec;
+  --red: #e40512;
+  --x-black: #1c1c1c;
+
+  /* --- FONT SIZES --- */
+
+  /* below the base */
+  --font-size-2b: 0.625rem;
+  --font-size-1b: 0.8125rem;
+
+  /* the base */
+  --font-size: 1rem;
+
+  /* above the base */
+  --font-size-1: 1.25rem;
+  --font-size-2: 1.5625rem;
+  --font-size-3: 2rem;
+  --font-size-4: 2.5rem;
+  --font-size-5: 3.1875rem;
+  --font-size-6: 4rem;
+  --font-size-7: 5rem;
+
+  /* --- LINE HEIGHTS --- */
+
+  /* below the base */
+  --line-height-2b: 2;
+  --line-height-1b: 1.5385;
+
+  /* the base */
+  --line-height: 1.5;
+
+  /* above the base */
+  --line-height-1: 1.4;
+  --line-height-2: 1.28;
+  --line-height-3: 1.25;
+  --line-height-4: 1.2;
+  --line-height-5: 1.1765;
+  --line-height-6: 1.125;
+
+  /* --- LETTER SPACING --- */
+
+  /* below the base */
+  --letter-space-2b: 0.074em;
+  --letter-space-1b: 0.05em;
+
+  /* the base */
+  --letter-space: 0.035em;
+
+  /* above the base */
+  --letter-space-1: 0.022em;
+  --letter-space-2: 0.0116em;
+  --letter-space-3: 0.0025em;
+  --letter-space-4: -0.004em;
+  --letter-space-5: -0.0096em;
+  --letter-space-6: -0.0137em;
+}
+header img {
+  background-color: var(--x-beige);
+  border-radius: 10px;
+  margin-left: var(--font-size-2);
+  aspect-ratio: 1/1;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 0.52rem;
+  font-family: "Montserrat";
+  font-size: var(--font-size);
+  font-weight: 500;
+  letter-spacing: var(--letter-space-2b);
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+header ul li {
+  list-style: none;
+  height: 100%;
+  text-align: center;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+}
+.active {
+  color: var(--red);
+}
+.cta_reservation_section {
+  position: relative;
+  background-color: var(--light-blue);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  margin-right: var(--font-size-2);
+}
+.cta_reservation_section:hover {
+  background-color: #5053ac;
+}
+.new_feat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2ch;
+}
+.new {
+  background-color: rgb(2, 182, 2);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+
+
+
+//css du body
+
+
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--light-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 40px;
+}
+footer div img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+footer div p {
+  margin-top: var(--font-size-2b);
+  font-family: "Montserrat";
+  font-size: var(--font-size-1b);
+  font-weight: 600;
+  color: white;
+}
+.download_cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size-2b);
+  margin-top: var(--font-size-3);
+}
+.download_cta a {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--dark-blue);
+  padding: 10px;
+  color: #fff;
+  font-size: var(--font-size-1b);
+  box-sizing: border-box;
+  display: block;
+  text-wrap: wrap;
+  width: 70%;
+  border-radius: 10px;
+  font-family: "Montserrat";
+}
+.download_cta a i {
+  margin-right: var(--font-size-2b);
+}
+.column {
+  font-family: "Black Han Sans";
+  font-size: var(--font-size);
+}
+.column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 10px;
+  margin-top: var(--font-size);
+}
+.column ul li {
+  list-style: none;
+  font-family: "Montserrat";
+  color: #fff;
+  margin-top: var(--font-size-2b);
+}
+.column a {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  width: 50%;
+  border: 1px solid #fff;
+  margin-inline: auto;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-blue);
+  padding: 10px 30px;
+  font-family: "Montserrat";
+  font-size: var(--font-size);
+  color: white;
+  padding-block: 1rem;
+}
+.copyright span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.side {
+  display: flex;
+  flex-direction: row;
+}
+ul li .mail {
+  text-decoration: underline;
+}
