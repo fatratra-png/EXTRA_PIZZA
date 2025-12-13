@@ -422,7 +422,7 @@ header a {
   flex-direction: row;
   gap: var(--font-size);
   flex: 0 0 1;
-  animation: spin 10s linear infinite;
+  animation: spin 15s linear infinite;
 }
 .slide_item {
   background-color: var(--dark-blue);
