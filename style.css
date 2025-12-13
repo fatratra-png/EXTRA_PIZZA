@@ -347,6 +347,7 @@ header a {
 #restaurant .title p {
   margin-top: var(--line-height-2b);
   line-height: var(--line-height);
+  font-size: var(--font-size);
 }
 .title a {
   color: #1c1c1c;
