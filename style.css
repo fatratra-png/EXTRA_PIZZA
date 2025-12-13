@@ -406,7 +406,7 @@ header a {
 #infinite_carrousel {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 75%;
   overflow-x: scroll;
   mask-image: linear-gradient(
     90deg,
