@@ -224,58 +224,51 @@ body {
   background-color: #252422;
 }
 
+.multi-cards{
+  display: flex;
+  flex-direction: row;
+}
 .resto_content {
   padding-top: 10vh;
+  padding-bottom: 10vh;
   display: flex;
-  flex-direction: row;
-  gap: 10ch;
+  justify-content: space-around;
 }
 
-/*here for cards*/
-.restaurant-card {
-  display: flex;
-  align-items: center;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin: 10px 0;
-  max-width: 600px;
+
+/* GRID RESTO */
+.resto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    width: 500px; /* Ajuste selon ton besoin */
 }
 
-.restaurant-photo {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 15px;
+/* Les cartes resto */
+.info-resto {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
 }
 
-.line {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2ch;
-}
-.restaurant-info {
-  flex: 1;
+.info-resto img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-.restaurant-name {
-  font-size: 1.2em;
-  margin: 0;
-  color: #333;
+.info-resto h3 {
+    margin: 8px 0 5px 0;
+    font-size: 16px;
 }
 
-.restaurant-address {
-  font-size: 0.95em;
-  color: #666;
-  margin: 5px 0;
-}
-
-.restaurant-rating i {
-  color: #ffd700; /* jaune doré */
-  margin-right: 3px;
+.stars {
+    color: #f0c200; /* couleur étoile dorée */
+    font-size: 18px;
 }
 
 footer {
