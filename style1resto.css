@@ -259,6 +259,10 @@ body {
     text-align: center;
 }
 
+.info-resto:hover{
+  transform: translateY(-7px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 .info-resto img {
     width: 100%;
     height: 120px;
