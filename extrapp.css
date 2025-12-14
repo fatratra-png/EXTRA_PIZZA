@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   /* --- MAIN COLORS --- */
   --dark-blue: #2b2e7e;
