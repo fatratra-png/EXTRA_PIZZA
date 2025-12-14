@@ -292,6 +292,10 @@ header ul li a:hover {
   align-items: center;
   justify-content: start;
   box-shadow: 0 0 2px #777777;
+  transition: transform .15s ease;
+}
+.carroussel_item:hover {
+  transform: scale(1.03);
 }
 .carroussel_item img {
   object-fit: cover;
