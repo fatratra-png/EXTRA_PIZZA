@@ -142,12 +142,14 @@ header ul li a:hover {
 }
 .tacos_factory {
   /*-Les divs en row-*/
-  background-color: var(--x-beige);
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
   place-items: center;
   padding-top: 8vh;
+  background-image: url("images/paint_2.svg");
+  background-position: bottom bottom;
+  background-size: contain;
 }
 
 .tacos_factory h1 {
