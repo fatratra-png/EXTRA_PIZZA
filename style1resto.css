@@ -389,3 +389,19 @@ iframe {
   box-shadow: 0 0 7px #777777;
 }
 /*fin projet aruchiwa*/
+main,footer {
+  animation: fade 0.7s ease-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  60% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
