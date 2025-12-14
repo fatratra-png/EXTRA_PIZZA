@@ -286,7 +286,7 @@ input:checked + .slider:before {
 }
 
 .confirm-input:hover {
-  background: green;
+  background: rgb(27, 226, 27);
   transform: translateY(-3px);
   color: black;
 }
