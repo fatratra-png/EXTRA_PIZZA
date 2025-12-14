@@ -64,6 +64,9 @@
   --letter-space-6: -0.0137em;
   font-family: "Montserrat";
 }
+html {
+  font-family: sans-serif;
+}
 header img {
   background-color: var(--x-beige);
   border-radius: 10px;
@@ -101,6 +104,12 @@ header a {
   color: #fff;
   text-decoration: none;
   height: 100%;
+  transition: transform 0.15s ease;
+}
+header ul li a:hover {
+    transform: scale(1.03) !important;
+    font-weight: 700;
+    color: #e40510b3;
 }
 .active {
   color: var(--red);

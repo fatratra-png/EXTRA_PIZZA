@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: sans-serif;
+}
 :root {
   /* --- MAIN COLORS --- */
   --dark-blue: #2b2e7e;
@@ -76,7 +79,7 @@ header {
   align-items: center;
   background-color: var(--dark-blue);
   padding: 0.52rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size);
   font-weight: 500;
   letter-spacing: var(--letter-space-2b);
@@ -100,6 +103,12 @@ header a {
   color: #fff;
   text-decoration: none;
   height: 100%;
+  transition: transform 0.15s ease;
+}
+header ul li a:hover {
+    transform: scale(1.03) !important;
+    font-weight: 700;
+    color: #e40510b3;
 }
 .active {
   color: var(--red);
@@ -174,12 +183,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.8ch;
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   font-size: var(--font-size-5);
 }
 
 .title_restaurant  h1>span{
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .blue {
   color: var(--dark-blue);
@@ -273,7 +282,7 @@ body {
 .info-resto h3 {
     margin: 8px 0 5px 0;
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
 }
 
 .stars {
@@ -296,7 +305,7 @@ footer div img {
 }
 footer div p {
   margin-top: var(--font-size-2b);
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-1b);
   font-weight: 600;
   color: white;
@@ -319,13 +328,13 @@ footer div p {
   text-wrap: wrap;
   width: 70%;
   border-radius: 10px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .download_cta a i {
   margin-right: var(--font-size-2b);
 }
 .column {
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   font-size: var(--font-size);
 }
 .column ul {
@@ -337,7 +346,7 @@ footer div p {
 }
 .column ul li {
   list-style: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-top: var(--font-size-2b);
 }
@@ -355,7 +364,7 @@ hr {
   justify-content: center;
   background-color: var(--light-blue);
   padding: 10px 30px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size);
   color: white;
   padding-block: 1rem;
@@ -372,7 +381,7 @@ ul li .mail {
   text-decoration: underline;
 }
 .incon_content span {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 iframe {
   border-radius: 15px;

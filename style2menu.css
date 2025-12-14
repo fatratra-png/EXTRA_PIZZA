@@ -76,7 +76,7 @@ header {
   align-items: center;
   background-color: var(--dark-blue);
   padding: 0.52rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size);
   font-weight: 500;
   letter-spacing: var(--letter-space-2b);
@@ -100,6 +100,12 @@ header a {
   color: #fff;
   text-decoration: none;
   height: 100%;
+  transition: transform 0.15s ease;
+}
+header ul li a:hover {
+    transform: scale(1.03) !important;
+    font-weight: 700;
+    color: #e40510b3;
 }
 .active {
   color: var(--red);
@@ -150,16 +156,16 @@ header a {
 }
 .tacos_factory_p {
   margin-bottom: var(--font-size-1);
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   color: var(--x-black);
   line-height: var(--line-height-3);
 }
 .subtitle {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   z-index: 1;
 }
 .tacos_factory h1 span {
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   letter-spacing: var(--letter-space-6);
   align-self: flex-start;
 }
@@ -186,7 +192,7 @@ header a {
   gap: 1ch;
 }
 .cta_command {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   background-color: #ffc43d;
   padding: 14px 10px;
   margin-top: 20px;
@@ -197,7 +203,7 @@ header a {
   cursor: pointer;
 }
 .cta_command_other {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   background-color: orange;
   padding: 14px 10px;
   margin-top: 20px;
@@ -299,7 +305,7 @@ header a {
   height: 80px;
   border-radius: 0 0 10px 10px;
   background-color: hsla(238, 49%, 33%, 1);
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,11 +326,11 @@ header a {
   margin-block: var(--font-size-1b);
 }
 .title h2 {
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   font-size: var(--font-size-3);
 }
 .title p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ----- SECTION MENU GLOBALE ----- */
@@ -445,7 +451,7 @@ footer div img {
 }
 footer div p {
   margin-top: var(--font-size-2b);
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-1b);
   font-weight: 600;
   color: white;
@@ -468,13 +474,13 @@ footer div p {
   text-wrap: wrap;
   width: 70%;
   border-radius: 10px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .download_cta a i {
   margin-right: var(--font-size-2b);
 }
 .column {
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   font-size: var(--font-size);
 }
 .column ul {
@@ -486,7 +492,7 @@ footer div p {
 }
 .column ul li {
   list-style: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-top: var(--font-size-2b);
 }
@@ -504,7 +510,7 @@ hr {
   justify-content: center;
   background-color: var(--light-blue);
   padding: 10px 30px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size);
   color: white;
   padding-block: 1rem;
@@ -535,7 +541,7 @@ footer div img {
 }
 footer div p {
   margin-top: var(--font-size-2b);
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-1b);
   font-weight: 600;
   color: white;
@@ -558,13 +564,13 @@ footer div p {
   text-wrap: wrap;
   width: 70%;
   border-radius: 10px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .download_cta a i {
   margin-right: var(--font-size-2b);
 }
 .column {
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   font-size: var(--font-size);
 }
 .column ul {
@@ -576,7 +582,7 @@ footer div p {
 }
 .column ul li {
   list-style: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-top: var(--font-size-2b);
 }
@@ -594,7 +600,7 @@ hr {
   justify-content: center;
   background-color: var(--light-blue);
   padding: 10px 30px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size);
   color: white;
   padding-block: 1rem;

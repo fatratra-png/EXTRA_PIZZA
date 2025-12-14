@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-family: sans-serif;
 }
 :root {
   /* --- MAIN COLORS --- */
@@ -77,7 +80,7 @@ header {
   align-items: center;
   background-color: var(--dark-blue);
   padding: 0.52rem;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size);
   font-weight: 500;
   letter-spacing: var(--letter-space-2b);
@@ -101,6 +104,12 @@ header a {
   color: #fff;
   text-decoration: none;
   height: 100%;
+  transition: transform 0.15s ease;
+}
+header ul li a:hover {
+    transform: scale(1.03) !important;
+    font-weight: 700;
+    color: #e40510b3;
 }
 .active {
   color: var(--red);
@@ -150,7 +159,7 @@ footer div img {
 }
 footer div p {
   margin-top: var(--font-size-2b);
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-1b);
   font-weight: 600;
   color: white;
@@ -173,13 +182,13 @@ footer div p {
   text-wrap: wrap;
   width: 70%;
   border-radius: 10px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 .download_cta a i {
   margin-right: var(--font-size-2b);
 }
 .column {
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans",sans-serif;
   font-size: var(--font-size);
 }
 .column ul {
@@ -191,7 +200,7 @@ footer div p {
 }
 .column ul li {
   list-style: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   color: #fff;
   margin-top: var(--font-size-2b);
 }
@@ -209,7 +218,7 @@ hr {
   justify-content: center;
   background-color: var(--light-blue);
   padding: 10px 30px;
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-size: var(--font-size);
   color: white;
   padding-block: 1rem;
@@ -252,7 +261,7 @@ ul li .mail {
   border: 1px solid rgba(255, 255, 255, 0.2);
  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);}
 .intro-content h1 {
-  font-family: "Black Han Sans";
+  font-family: "Black Han Sans", sans-serif;
   font-weight: 800;
   line-height: var(--line-height-6);
   margin-bottom: 10px;
@@ -301,7 +310,7 @@ ul li .mail {
   padding: 12px 20px;
   color: white;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   transition: all 0.3s ease;
   min-width: 200px;
 }
@@ -336,7 +345,7 @@ ul li .mail {
 }
 
 .features-section h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-5);
   color: var(--dark-blue);
   margin-bottom: 70px;
@@ -367,7 +376,7 @@ ul li .mail {
 }
 
 .feature-card h3 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-2);
   color: var(--x-black);
   margin-bottom: 15px;
@@ -425,7 +434,7 @@ ul li .mail {
 }
 
 .team-section h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-5);
   color: var(--dark-blue);
   margin-bottom: 70px;
@@ -448,7 +457,7 @@ ul li .mail {
 }
 
 .team-member h3 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-2);
   color: var(--x-black);
   margin-bottom: 8px;
