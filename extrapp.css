@@ -400,6 +400,8 @@ ul li .mail {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline:20px;
+  border-radius: 20px;
 }
 
 .download-cta-section h2 {
