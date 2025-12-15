@@ -588,3 +588,6 @@ main,footer {
     transform: scale(1);
   }
 }
+#no {
+  font-weight: 400;
+}

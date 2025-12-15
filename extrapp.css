@@ -160,6 +160,9 @@ footer div img {
   aspect-ratio: 1/1;
   border-radius: 10px;
 }
+footer h2 {
+  font-family: "Black Han Sans";
+}
 footer div p {
   margin-top: var(--font-size-2b);
   font-family: "Montserrat", sans-serif;
@@ -536,4 +539,7 @@ main,footer {
     opacity: 1;
     transform: scale(1);
   }
+}
+#no {
+  font-weight: 400;
 }
