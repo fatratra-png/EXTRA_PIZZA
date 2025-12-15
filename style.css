@@ -67,6 +67,22 @@ html {
   --letter-space-5: -0.0096em;
   --letter-space-6: -0.0137em;
 }
+main,footer {
+  animation: fade 0.7s ease-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  60% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 header img {
   background-color: var(--x-beige);
   border-radius: 10px;
