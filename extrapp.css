@@ -400,6 +400,8 @@ ul li .mail {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline:20px;
+  border-radius: 20px;
 }
 
 .download-cta-section h2 {
@@ -518,4 +520,20 @@ ul li .mail {
   border: none;
   border-radius: 0;
   opacity: 1;
+}
+main,footer {
+  animation: fade 0.7s ease-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  60% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

@@ -398,7 +398,7 @@ header ul li a:hover {
 #why img,
 #restaurant img {
   max-height: 46vh;
-  min-height: 400px;
+  width: 600px;
   border-radius: 30px;
   display: inline-block;
 }
@@ -571,4 +571,20 @@ hr {
 }
 ul li .mail {
   text-decoration: underline;
+}
+main,footer {
+  animation: fade 0.7s ease-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  60% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

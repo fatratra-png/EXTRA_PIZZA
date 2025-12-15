@@ -232,9 +232,16 @@ body {
   background: transparent;
 }
 .icon_content {
-  display: flex;
-  flex-direction: row;
-  background-color: #252422;
+  text-align: center;
+  color: var(--x-beige);
+  gap: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.icon_content:hover {
+  color: white;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 .multi-cards{
@@ -267,6 +274,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     text-align: center;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
 }
 
 .info-resto:hover{
@@ -389,3 +398,36 @@ iframe {
   box-shadow: 0 0 7px #777777;
 }
 /*fin projet aruchiwa*/
+main,footer {
+  animation: fade 0.7s ease-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  60% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.info-resto:nth-child(1) { animation-delay: 0.1s; }
+.info-resto:nth-child(2) { animation-delay: 0.2s; }
+.info-resto:nth-child(3) { animation-delay: 0.3s; }
+.info-resto:nth-child(4) { animation-delay: 0.4s; }
